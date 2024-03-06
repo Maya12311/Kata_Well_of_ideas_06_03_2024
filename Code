@@ -1,0 +1,26 @@
+public class Kata {
+
+  public static String well(String[] x) {
+    // TODO
+    String phrase = "";
+    int count = 0;
+    for(String one: x){
+      if(one.equals("good")){
+        count++;
+      }
+      }
+            
+if(count == 0){
+  phrase = "Fail!";
+}
+  else  if (count >0 && count < 3){
+      phrase = "Publish!";
+    } else if(count >=3){
+
+      phrase = "I smell a series!";
+    }
+ 
+    return phrase;
+  }
+
+}
